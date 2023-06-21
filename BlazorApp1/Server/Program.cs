@@ -23,8 +23,9 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseBlazorFrameworkFiles();
-app.UseStaticFiles();
+app.UseBlazorFrameworkFiles("/my-product");
+app.UseStaticFiles(); 
+// app.UseStaticFiles("/my-product); // this could be used as workaround
 
 app.UseRouting();
 
